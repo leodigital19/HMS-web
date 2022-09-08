@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - HMS_web</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/StyleSheet.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/HMS_web.styles.css" asp-append-version="true" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+</head>
+<body>
+    <div class="row">
+        <div class="col">
+            <div class="side-menu">
+
+                <nav class="navbar navbar-default" role="navigation">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <div class="brand-wrapper">
+                            <!-- Hamburger -->
+                            <button type="button" class="navbar-toggle">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+
+                            <!-- Brand -->
+                            <div class="brand-name-wrapper">
+                                <a class="navbar-brand" href="#">
+                                    Brand
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Main Menu -->
+                    <div class="side-menu-container">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index"><span class="glyphicon glyphicon-send"></span>Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="Employees" asp-action="Add"><span class="glyphicon glyphicon-send"></span>Add Employees</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="Employees" asp-action="Index"><span class="glyphicon glyphicon-send"></span>Employees</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="Patients" asp-action="Add"><span class="glyphicon glyphicon-send"></span>Add Patients</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="Patients" asp-action="Index"><span class="glyphicon glyphicon-send"></span>Patients</a>
+                            </li>
+                        </ul>
+
+                    </div><!-- /.navbar-collapse -->
+                </nav>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="main">
+                <div class="side-body">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+    </div>
+   @* <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - HMS_web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)*@
+</body>
+</html>

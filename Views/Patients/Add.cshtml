@@ -1,0 +1,50 @@
+﻿@model HMS_web.Models.AddPatients;
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<form method="post" action="Add">
+    <div class="form-row col-md-12">
+        <div class="form-group col-md-6">
+            <label for="">Fist Name:</label>
+            <input type="text" class="form-control" id="Name" placeholder="First Name" asp-for="Name">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="">Last Name:</label>
+            <input type="text" class="form-control" id="inputPassword4" placeholder="Last Name" asp-for="Surname">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="">Date of Birth:</label>
+            <input type="date" class="form-control" id="Name" placeholder="Date of Birth" asp-for="DOB">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="">Marital Status:</label>
+            <select id="inputMaritalStatus" class="form-control" asp-for="MaritalStatus">
+                <option selected>Choose...</option>
+                <option>Married</option>
+                <option>Single</option>
+                <option>Divorced</option>
+                <option>Other</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="">Cell Phone:</label>
+            <input type="text" class="form-control" id="Name" placeholder="Cell Phone Number" asp-for="Phone">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="">Email:</label>
+            <input type="text" class="form-control" id="inputPassword4" placeholder="email" asp-for="Email">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputAddress">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" asp-for="Address">
+    </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
